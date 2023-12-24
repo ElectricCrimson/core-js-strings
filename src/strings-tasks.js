@@ -131,8 +131,8 @@ function removeTrailingWhitespaces(value) {
  *   repeatString('', 3) => ''
  *   repeatString('abc', -2) => ''
  */
-function repeatString(/* str, times */) {
-  throw new Error('Not implemented');
+function repeatString(str, times) {
+  return times >= 1 ? str.repeat(times) : '';
 }
 
 /**
@@ -241,6 +241,14 @@ function formatTime(/* minutes, seconds */) {
  *   reverseString('12345') => '54321'
  */
 function reverseString(/* str */) {
+  // let result = '';
+  // let i = str.length - 1;
+
+  // while(i <= str.length - 1) {
+  //   result += str[i];
+  //   i -= 1;
+  // }
+  // return result;
   throw new Error('Not implemented');
 }
 
@@ -416,8 +424,8 @@ function unbracketTag(str) {
  *   ],
  *   'info@gmail.com' => ['info@gmail.com']
  */
-function extractEmails(/* str */) {
-  throw new Error('Not implemented');
+function extractEmails(str) {
+  return str.split(';');
 }
 
 /**
