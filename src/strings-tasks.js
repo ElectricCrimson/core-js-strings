@@ -240,16 +240,12 @@ function formatTime(/* minutes, seconds */) {
  *   reverseString('abcdef') => 'fedcba'
  *   reverseString('12345') => '54321'
  */
-function reverseString(/* str */) {
-  // let result = '';
-  // let i = str.length - 1;
-
-  // while(i <= str.length - 1) {
-  //   result += str[i];
-  //   i -= 1;
-  // }
-  // return result;
-  throw new Error('Not implemented');
+function reverseString(str) {
+  let result = '';
+  for (let i = str.length - 1; i >= 0; i -= 1) {
+    result += str[i];
+  }
+  return result;
 }
 
 /**
